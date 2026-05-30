@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI Kit — Документация</title>
+  <link rel="stylesheet" href="../dist/main.css">
+</head>
+<body>
+  <!-- Навигация -->
+  <nav class="navbar">
+    <div class="navbar__container container">
+      <a href="#" class="navbar__brand">MyUI Kit</a>
+      <input type="checkbox" id="nav-toggle" class="navbar__checkbox">
+      <label for="nav-toggle" class="navbar__toggle">☰</label>
+      <ul class="navbar__list">
+        <li><a href="#buttons" class="navbar__link">Кнопки</a></li>
+        <li><a href="#inputs" class="navbar__link">Поля ввода</a></li>
+        <li><a href="#cards" class="navbar__link">Карточки</a></li>
+        <li><a href="#grid" class="navbar__link">Сетка</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <!-- Кнопки -->
+    <section id="buttons" class="demo-section">
+      <h2 class="demo-section__title">Кнопки (Button)</h2>
+      <div class="demo-section__row">
+        <button class="btn btn--primary">Primary</button>
+        <button class="btn btn--secondary">Secondary</button>
+        <button class="btn btn--disabled" disabled>Disabled</button>
+      </div>
+      <div class="demo-section__row">
+        <button class="btn btn--primary btn--small">Small</button>
+        <button class="btn btn--primary btn--medium">Medium</button>
+        <button class="btn btn--primary btn--large">Large</button>
+      </div>
+    </section>
+
+    <!-- Поля ввода -->
+    <section id="inputs" class="demo-section">
+      <h2 class="demo-section__title">Поля ввода (Input)</h2>
+      <div class="demo-section__row">
+        <label class="input">
+          <span>Обычное поле</span>
+          <div class="input__wrapper">
+            <input type="text" class="input__field" placeholder="Введите текст">
+          </div>
+        </label>
+        <label class="input">
+          <span>С иконкой</span>
+          <div class="input__wrapper">
+            <span class="input__icon"></span>
+            <input type="text" class="input__field input__field--with-icon" placeholder="Поиск...">
+          </div>
+        </label>
+        <label class="input input--error">
+          <span>Поле с ошибкой</span>
+          <div class="input__wrapper">
+            <input type="text" class="input__field" value="Неверный email">
+          </div>
+          <span class="input__error">Некорректный формат данных</span>
+        </label>
+      </div>
+      <div class="demo-section__row">
+        <label class="checkbox"><input type="checkbox"> Согласен с условиями</label>
+        <label class="radio"><input type="radio" name="theme"> Светлая тема</label>
+      </div>
+    </section>
+
+    <!-- Карточки -->
+    <section id="cards" class="demo-section">
+      <h2 class="demo-section__title">Карточки (Card)</h2>
+      <div class="grid">
+        <article class="card card--small">
+          <img src="https://picsum.photos/300/200?random=1" alt="" class="card__image">
+          <div class="card__content">
+            <h3 class="card__title">Small Card</h3>
+            <p class="card__text">Компактная карточка для списков.</p>
+          </div>
+        </article>
+        <article class="card card--medium">
+          <img src="https://picsum.photos/400/250?random=2" alt="" class="card__image">
+          <div class="card__content">
+            <h3 class="card__title">Medium Card</h3>
+            <p class="card__text">Стандартный размер для каталога.</p>
+          </div>
+        </article>
+        <article class="card card--large card--no-image">
+          <div class="card__content">
+            <h3 class="card__title">Large Card (no image)</h3>
+            <p class="card__text">Большая карточка без изображения. Подходит для текстовых анонсов.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Сетка -->
+    <section id="grid" class="demo-section">
+      <h2 class="demo-section__title">Grid & Flex Layout</h2>
+      <div class="grid">
+        <div style="background:#e0e7ff;padding:2rem;border-radius:8px;text-align:center;">Grid Item 1</div>
+        <div style="background:#dbeafe;padding:2rem;border-radius:8px;text-align:center;">Grid Item 2</div>
+        <div style="background:#cffafe;padding:2rem;border-radius:8px;text-align:center;">Grid Item 3</div>
+        <div style="background:#d1fae5;padding:2rem;border-radius:8px;text-align:center;">Grid Item 4</div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

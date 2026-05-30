@@ -1,0 +1,22 @@
+.container {
+  max-width: $container;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.demo-section {
+  width: 100%;
+  margin-bottom: 3rem;
+  &__title { font-size: 1.5rem; margin-bottom: 1rem; border-bottom: 2px solid $border; padding-bottom: 0.5rem; }
+  &__row { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; margin-bottom: 1rem; }
+}
